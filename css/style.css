@@ -76,3 +76,13 @@ input.bad,textarea.bad{border-color:#ff6b6b}
 .skill-group h2,.card h2{font-size:1.2rem;margin:.2em 0;padding:0;border:none}
 .nav a[aria-current="page"]{border-bottom-color:var(--sky);color:var(--sky)}
 .section{min-height:60vh}
+
+/* Contact page layout */
+.intro{font-size:1.1rem;color:var(--muted)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:24px;align-items:start;margin-top:1.5rem}
+.info-card,.contact-grid form{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--sky);border-radius:6px;padding:22px;max-width:none}
+.info-card h2,.contact-grid form h2{font-size:1.2rem;margin:0 0 .6em;padding:0;border:none}
+.info-card dt{font-weight:700;color:var(--sky);margin-top:1em}
+.info-card dd{margin:.2em 0 0}
+.hint{font-size:.9rem;color:var(--muted);margin:.4em 0 0}
+@media (max-width:700px){.contact-grid{grid-template-columns:1fr}}

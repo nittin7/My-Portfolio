@@ -72,11 +72,22 @@ if (form) {
     const b = check('email', 'emailErr', 'Enter a valid email address, like name@example.com.', v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v));
     const c = check('msg', 'msgErr', 'Write a message of at least 10 characters.', v => v.length >= 10);
     if (a && b && c) {
-      ok.textContent = 'Your entries look good. This demo form does not send messages, so please email me directly.';
-      form.reset();
+      const subject = encodeURIComponent('Portfolio message from ' + document.getElementById('name').value.trim());
+      const body = encodeURIComponent(document.getElementById('msg').value.trim() + '\n\nFrom: ' + document.getElementById('email').value.trim());
+      ok.textContent = 'Opening your email app. If nothing opens, copy my email address and write to me directly.';
+      window.location.href = 'mailto:snittin08@gmail.com?subject=' + subject + '&body=' + body;
     }
   });
 }
+
+// Copy email button (Contact page)
+const copyBtn = document.getElementById('copyBtn');
+if (copyBtn) copyBtn.addEventListener('click', () => {
+  const msg = document.getElementById('copyMsg');
+  navigator.clipboard.writeText('snittin08@gmail.com')
+    .then(() => { msg.textContent = 'Copied!'; })
+    .catch(() => { msg.textContent = 'Copy failed. Please select the email and copy it.'; });
+});
 
 // 7. Back to top button
 const topBtn = document.getElementById('topBtn');

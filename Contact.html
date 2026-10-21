@@ -28,26 +28,43 @@
 <main id="main">
   <section class="wrap section">
     <h1 class="page-title">Contact</h1>
-    <p>Email me at <a href="mailto:nittin.demo@example.com">nittin.demo@example.com</a> (demo address), or try the form below. The form only checks your entries on this page. It does not send a message.</p>
-    <form id="form" novalidate>
-      <label for="name">Name</label>
-      <input id="name" name="name" type="text" autocomplete="name" required>
-      <p class="err" id="nameErr" role="alert"></p>
-      <label for="email">Email</label>
-      <input id="email" name="email" type="email" autocomplete="email" required>
-      <p class="err" id="emailErr" role="alert"></p>
-      <label for="msg">Message</label>
-      <textarea id="msg" name="msg" rows="4" required></textarea>
-      <p class="err" id="msgErr" role="alert"></p>
-      <button class="btn" type="submit">Check my message</button>
-      <p class="ok" id="ok" role="status"></p>
-    </form>
+    <p class="intro">Have a question or want to talk about a project? Send me a message.</p>
+    <div class="contact-grid">
+      <aside class="info-card" aria-label="Contact details">
+        <h2>Contact details</h2>
+        <dl>
+          <dt>Email</dt>
+          <dd><a href="mailto:snittin08@gmail.com">snittin08@gmail.com</a>
+            <button class="more" id="copyBtn" type="button">Copy email</button>
+            <span class="ok" id="copyMsg" role="status"></span></dd>
+          <dt>Studying</dt>
+          <dd>B.Sc Computer Science, KG College of Arts and Science</dd>
+          <dt>Interested in</dt>
+          <dd>Web development, design and cloud computing</dd>
+        </dl>
+      </aside>
+      <form id="form" novalidate>
+        <h2>Send a message</h2>
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+        <p class="err" id="nameErr" role="alert"></p>
+        <label for="email">Your email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <p class="err" id="emailErr" role="alert"></p>
+        <label for="msg">Message</label>
+        <textarea id="msg" name="msg" rows="5" required></textarea>
+        <p class="err" id="msgErr" role="alert"></p>
+        <button class="btn" type="submit">Open in my email app</button>
+        <p class="hint">This form does not send the message itself. After you check it, it opens your email app with the message ready to send.</p>
+        <p class="ok" id="ok" role="status"></p>
+      </form>
+    </div>
   </section>
 </main>
 
 <footer class="site-footer">
-  <!-- CHANGE THIS EMAIL: replace nittin.demo@example.com in the footer and on the Contact page. -->
-  <p>© <span id="year">2026</span> Nittin S · <a href="mailto:nittin.demo@example.com">nittin.demo@example.com</a></p>
+  <!-- To change the email, search for snittin08@gmail.com in all .html files and in js/script.js -->
+  <p>© <span id="year">2026</span> Nittin S · <a href="mailto:snittin08@gmail.com">snittin08@gmail.com</a></p>
 </footer>
 
 <button class="icon-btn top" id="topBtn" aria-label="Back to top" hidden>↑</button>
