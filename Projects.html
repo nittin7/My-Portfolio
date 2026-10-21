@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects | Nittin S</title>
+<meta name="description" content="Portfolio of Nittin S, a B.Sc Computer Science student interested in web development, design and cloud computing.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="bar">
+    <a class="logo" href="index.html">Nittin S</a>
+    <button class="icon-btn menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Open menu">☰</button>
+    <nav id="nav" class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="icon-btn" id="themeBtn" aria-pressed="false" aria-label="Switch to light theme">☀️</button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="wrap section">
+    <h1 class="page-title">Projects</h1>
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button class="chip active" data-filter="all" aria-pressed="true">All</button>
+      <button class="chip" data-filter="web" aria-pressed="false">Web</button>
+      <button class="chip" data-filter="programming" aria-pressed="false">Programming</button>
+    </div>
+    <div class="cards">
+      <article class="card" data-cat="web">
+        <div class="thumb t1" role="img" aria-label="Movie Ticket Booking project: 🎟️ icon panel">🎟️ Movie Ticket Booking</div>
+        <h2>Movie Ticket Booking</h2>
+        <p>A website where a user can pick a movie and book tickets.</p>
+        <p class="tools"><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+        <button class="more" aria-expanded="false">Show details</button>
+        <div class="details" hidden>
+          <p><strong>What I did:</strong> I built the pages, styled them and wrote the JavaScript that handles the booking.</p>
+          <p><strong>What I learned:</strong> how HTML, CSS and JavaScript work together in one project.</p>
+          <p class="note">Not published online. Files are in my project folder.</p>
+        </div>
+      </article>
+      <article class="card" data-cat="programming">
+        <div class="thumb t2" role="img" aria-label="Employee Management project: 💼 icon panel">💼 Employee Management</div>
+        <h2>Employee Management</h2>
+        <p>A Java program that stores and manages employee records.</p>
+        <p class="tools"><strong>Tools:</strong> Java</p>
+        <button class="more" aria-expanded="false">Show details</button>
+        <div class="details" hidden>
+          <p><strong>What I did:</strong> I wrote the Java code to add, view and manage employee details.</p>
+          <p><strong>What I learned:</strong> how to organize a program with classes and logic.</p>
+          <p class="note">Not published online. Source code is in my project folder.</p>
+        </div>
+      </article>
+      <article class="card" data-cat="programming">
+        <div class="thumb t3" role="img" aria-label="Contact Book project: 📒 icon panel">📒 Contact Book</div>
+        <h2>Contact Book</h2>
+        <p>A C program that saves and finds contacts.</p>
+        <p class="tools"><strong>Tools:</strong> C</p>
+        <button class="more" aria-expanded="false">Show details</button>
+        <div class="details" hidden>
+          <p><strong>What I did:</strong> I wrote the C code to add, search and display contacts.</p>
+          <p><strong>What I learned:</strong> how to handle data and logic step by step in C.</p>
+          <p class="note">Not published online. Source code is in my project folder.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <!-- CHANGE THIS EMAIL: replace nittin.demo@example.com in the footer and on the Contact page. -->
+  <p>© <span id="year">2026</span> Nittin S · <a href="mailto:nittin.demo@example.com">nittin.demo@example.com</a></p>
+</footer>
+
+<button class="icon-btn top" id="topBtn" aria-label="Back to top" hidden>↑</button>
+<script src="js/script.js"></script>
+</body>
+</html>
