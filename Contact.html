@@ -59,17 +59,10 @@
         <label for="msg">Message</label>
         <textarea id="msg" name="msg" rows="5" required></textarea>
         <p class="err" id="msgErr" role="alert"></p>
-        <button class="btn" type="submit">Save message</button>
-        <p class="hint">Your message is saved only in your own browser (localStorage). I cannot see it from here, so use the email link that appears after saving to send it to me.</p>
+        <button class="btn" type="submit">Send message</button>
+        <p class="hint">When you click Send message, your email app opens with this message ready to send to me. A copy is also kept in your browser’s localStorage.</p>
         <p class="ok" id="ok" role="status"></p>
-        <a id="mailLink" href="#" hidden>Send this message by email</a>
       </form>
-    </div>
-    <div class="saved">
-      <h2>Messages saved in this browser</h2>
-      <p id="emptyNote">No saved messages yet.</p>
-      <ul id="msgList"></ul>
-      <button class="more" id="clearBtn" type="button" hidden>Clear all messages</button>
     </div>
   </section>
 </main>

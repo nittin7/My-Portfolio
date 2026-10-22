@@ -96,3 +96,7 @@ input.bad,textarea.bad{border-color:#ff6b6b}
   .avatar{order:-1;width:200px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Home buttons */
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn.ghost{background:transparent;color:var(--accent)}
